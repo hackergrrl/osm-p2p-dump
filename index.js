@@ -3,6 +3,7 @@ YAML.parse = YAML.safeLoad
 YAML.stringify = YAML.safeDump
 
 var through = require('through2')
+var readonly = require('read-only-stream')
 
 module.exports = function (osm, opts) {
   var t = through.obj(write)
@@ -19,5 +20,5 @@ module.exports = function (osm, opts) {
     next()
   }
 
-  return t
+  return readonly(t)
 }

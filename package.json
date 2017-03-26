@@ -23,7 +23,8 @@
     "js-yaml": "^3.8.2",
     "level": "^1.6.0",
     "minimist": "^1.2.0",
-    "osm-p2p-db": "^3.11.0"
+    "osm-p2p-db": "^3.11.0",
+    "read-only-stream": "^2.0.0"
   },
   "devDependencies": {
     "tape": "~4.6.2",
