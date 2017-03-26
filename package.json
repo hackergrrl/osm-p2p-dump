@@ -23,6 +23,7 @@
     "js-yaml": "^3.8.2",
     "level": "^1.6.0",
     "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
     "osm-p2p-db": "^3.11.0",
     "read-only-stream": "^2.0.0"
   },
