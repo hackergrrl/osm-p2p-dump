@@ -7,6 +7,6 @@ USAGE:
   on-demand.
 
   -h, --help                display this help and exit
-  -j, --json                output as json
-  -y, --yaml                output as yaml (default)
+  -j, --json                output as newline-delimited json
+  -y, --yaml                output as newline-delimited yaml (default)
 
