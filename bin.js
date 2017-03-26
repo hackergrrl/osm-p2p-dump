@@ -28,6 +28,7 @@ var osm = osmdb({
 dump(osm, {
   json: argv.j || argv.json
 })
+  .pipe(process.stdout)
 
 function printUsageAndDie () {
   var str = require('fs').createReadStream('USAGE')
