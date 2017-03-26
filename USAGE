@@ -1,0 +1,12 @@
+USAGE:
+
+  osm-p2p-dump [OPTIONS]... [DIR]
+
+  Where DIR is the osm-p2p-db directory containing at least the 'log'
+  directory. If 'index' and/or 'kdb' DBs aren't present, they will be generated
+  on-demand.
+
+  -h, --help                display this help and exit
+  -j, --json                output as json
+  -y, --yaml                output as yaml (default)
+
