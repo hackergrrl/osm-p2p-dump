@@ -3,6 +3,7 @@
 var dump = require('./')
 var argv = require('minimist')(process.argv)
 var mkdirp = require('mkdirp')
+var path = require('path')
 
 // treat --log as a flag, not an arg-accepting param
 if ((argv.l || argv.log) && (argv.l !== true || argv.log !== true)) {
@@ -53,7 +54,7 @@ dump(osm, {
   .pipe(process.stdout)
 
 function printUsageAndDie () {
-  var str = require('fs').createReadStream('USAGE')
+  var str = require('fs').createReadStream(path.join(__dirname, 'USAGE'))
   str.pipe(process.stdout)
   str.on('end', function () {
     process.exit(0)
