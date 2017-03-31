@@ -16,6 +16,11 @@ USAGE:
   -h, --help                display this help and exit
   -j, --json                output as newline-delimited json
   -y, --yaml                output as newline-delimited yaml (default)
+  -l, --log                 operate on a hyperlog directly; generates temporary
+                            indexes automatically
+  -h, --heads               only print head documents (not their older
+                            revisions)
+
 ```
 
 ## API Usage
@@ -77,6 +82,9 @@ var dump = require('osm-p2p-dump')
 
 Returns a readable stream of newline-delimited YAML or JSON, depending on
 whether `opts.json` or `opts.yaml` is set. Defaults to YAML.
+
+By default, all versions of all documents are dumped. To get only the latest
+version of each document, set `opts.heads` to `true`.
 
 ## Install
 

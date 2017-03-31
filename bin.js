@@ -49,7 +49,8 @@ var osm = osmdb({
 })
 
 dump(osm, {
-  json: argv.j || argv.json
+  json: argv.j || argv.json,
+  heads: argv.h || argv.heads
 })
   .pipe(process.stdout)
 
