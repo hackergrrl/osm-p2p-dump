@@ -11,5 +11,6 @@ USAGE:
   -y, --yaml                output as newline-delimited yaml (default)
   -l, --log                 operate on a hyperlog directly; generates temporary
                             indexes automatically
-  -h, --heads               only print head documents (not their older revisions)
+  -t, --top                 only print top-level (head) documents (not their
+                            older revisions)
 

@@ -50,7 +50,7 @@ var osm = osmdb({
 
 dump(osm, {
   json: argv.j || argv.json,
-  heads: argv.h || argv.heads
+  heads: argv.t || argv.top
 })
   .pipe(process.stdout)
 
