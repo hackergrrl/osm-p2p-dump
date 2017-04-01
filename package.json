@@ -2,7 +2,7 @@
   "name": "osm-p2p-dump",
   "description": "dump an osm-p2p-db's documents as json or yaml",
   "author": "Stephen Whitmore <sww@eight.net>",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "bin": {
     "osm-p2p-dump": "bin.js"
   },
